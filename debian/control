@@ -1,0 +1,40 @@
+Source: kstars
+Section: kde
+Priority: optional
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Uploaders: Pino Toscano <pino@debian.org>
+Build-Depends: kde-sc-dev-latest (>= 4:4.6.5),
+ cmake, debhelper (>= 7.3.16), pkg-kde-tools (>= 0.12),
+ dpkg-dev (>= 1.15.5), kdelibs5-dev (>= 4:4.6),
+ libeigen2-dev (>> 2.0.3), zlib1g-dev, libcfitsio3-dev (>= 3.040),
+ libglu1-mesa-dev, libnova-dev, libqt4-opengl-dev, pkg-config, xplanet,
+Standards-Version: 3.9.2
+Homepage: http://edu.kde.org/
+Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kstars.git
+Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kstars.git
+
+Package: kstars
+Architecture: any
+Section: science
+Depends: ${shlibs:Depends}, ${misc:Depends}, kstars-data (>= ${source:Version})
+Suggests: konqueror, khelpcenter4, indi
+Description: desktop planetarium for KDE
+ KStars is a desktop planetarium for KDE, depicting an accurate graphical
+ simulation of the night sky, from any location on Earth, at any date and time.
+ The display includes 130,000 stars, 13,000 deep-sky objects, all 8 planets,
+ the Sun and Moon, and thousands of comets and asteroids.  It includes tools
+ for astronomical calculations and can control telescopes and cameras.
+ .
+ This package is part of the KDE education module.
+
+Package: kstars-data
+Architecture: all
+Section: science
+Depends: ${misc:Depends}
+Description: data files for KStars desktop planetarium
+ This package contains architecture-independent data files for KStars,
+ the graphical desktop planetarium for KDE, including star catalogues and
+ astronomical images.
+ .
+ This package is part of the KDE education module.
+
