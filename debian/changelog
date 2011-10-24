@@ -1,5 +1,9 @@
 kstars (4:4.7.2-0r0) UNRELEASED; urgency=low
 
   * Initial release.
+  * Provide the INDI support, only on Linux architecture (as upstream checks):
+    (Closes: #599332)
+    - build depend on libindi-dev
+    - change the suggest from indi to indi-bin
 
  -- Pino Toscano <pino@debian.org>  Mon, 24 Oct 2011 16:35:38 +0200
