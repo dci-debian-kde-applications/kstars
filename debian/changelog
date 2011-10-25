@@ -1,6 +1,9 @@
 kstars (4:4.7.2-0r0) UNRELEASED; urgency=low
 
-  * Initial release.
+  * Initial release:
+    - provides various corrections for Canadian entries in Cities.dat
+      (Closes: #622310)
+    - correctly takes the DST into account (Closes: #622312)
   * Provide the INDI support, only on Linux architecture (as upstream checks):
     (Closes: #599332)
     - build depend on libindi-dev
