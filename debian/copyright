@@ -47,6 +47,7 @@ License: GPL-2
 
 Files: debian/*
 Copyright: 2011, Pino Toscano <pino@debian.org>
+Copyright: 2011, Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 License: GPL-2+
 
 License: BSD-3-clause
