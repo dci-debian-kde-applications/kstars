@@ -18,7 +18,7 @@ Package: kstars
 Architecture: any
 Section: science
 Depends: ${shlibs:Depends}, ${misc:Depends}, kstars-data (>= ${source:Version})
-Suggests: konqueror, khelpcenter4, indi-bin [linux-any]
+Suggests: konqueror, khelpcenter4, indi-bin [linux-any], xplanet
 Description: desktop planetarium for KDE
  KStars is a desktop planetarium for KDE, depicting an accurate graphical
  simulation of the night sky, from any location on Earth, at any date and time.
