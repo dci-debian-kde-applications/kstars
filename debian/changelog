@@ -1,3 +1,9 @@
+kstars (4:4.7.4-2) unstable; urgency=low
+
+  * Upload to unstable.
+
+ -- Pino Toscano <pino@debian.org>  Wed, 07 Mar 2012 14:40:27 +0100
+
 kstars (4:4.7.4-1) experimental; urgency=low
 
   * New upstream release. 
