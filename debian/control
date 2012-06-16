@@ -10,7 +10,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.8.4),
  libeigen2-dev (>> 2.0.3), zlib1g-dev, libcfitsio3-dev (>= 3.040),
  libglu1-mesa-dev, libnova-dev, libqt4-opengl-dev, pkg-config, xplanet,
  libindi-dev [linux-any],
-Standards-Version: 3.9.2
+Standards-Version: 3.9.3
 Homepage: http://edu.kde.org/
 Vcs-Browser: http://git.debian.org/?p=pkg-kde/kde-sc/kstars.git
 Vcs-Git: git://git.debian.org/pkg-kde/kde-sc/kstars.git
