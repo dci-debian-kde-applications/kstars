@@ -3,6 +3,7 @@ kstars (4:4.8.4-2) UNRELEASED; urgency=low
   * New patch: upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff.
     (Closes: #701303)
   * Add myself to uploaders.
+  * Add a basic manpage.
 
  -- Maximiliano Curia <maxy@debian.org>  Thu, 20 Jun 2013 14:49:46 +0200
 
