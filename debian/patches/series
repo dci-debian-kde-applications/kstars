@@ -1,1 +1,1 @@
-debian/patches/upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff
+upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff
