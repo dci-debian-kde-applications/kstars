@@ -1,6 +1,7 @@
 kstars (4:4.10.4-2) UNRELEASED; urgency=low
 
-  * 
+  * Remove upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff,
+    already applied upstream.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Jul 2013 11:29:14 +0200
 
