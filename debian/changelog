@@ -21,6 +21,18 @@ kstars (4:4.10.2-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 11 Apr 2013 23:37:58 -0700
 
+kstars (4:4.8.4-2) unstable; urgency=low
+
+  * New patch: upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff.
+    (Closes: #701303)
+  * Add myself to uploaders.
+  * Add a basic manpage.
+  * Bump debhelper build-dep and compat to 9.
+  * Bump Standards-Version to 3.9.4.
+  * Update vcs fields.
+
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 26 Jun 2013 08:27:14 +0200
+
 kstars (4:4.8.4-1) unstable; urgency=low
 
   * New upstream release.
