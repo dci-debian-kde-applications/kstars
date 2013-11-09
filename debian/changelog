@@ -1,10 +1,10 @@
-kstars (4:4.11.3-1) UNRELEASED; urgency=low
+kstars (4:4.11.3-1) unstable; urgency=low
 
   * New upstream release.
   * Update build dependencies.
   * Switch to libeigen3-dev, thanks to Anton Gladky. (Closes: #726644)
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 06 Nov 2013 16:40:54 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Sat, 09 Nov 2013 17:47:13 +0100
 
 kstars (4:4.11.2-1) experimental; urgency=low
 
