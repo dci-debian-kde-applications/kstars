@@ -2,6 +2,7 @@ kstars (4:4.11.3-2) UNRELEASED; urgency=low
 
   * Enable tests.
   * Create a kstars-dbg package.
+  * Bump Standards-Version to 3.9.5, no changes required.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 19 Nov 2013 21:02:49 +0100
 
