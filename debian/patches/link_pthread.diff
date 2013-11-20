@@ -1,0 +1,17 @@
+Author: José Manuel Santamaría Lema <panfaust@gmail.com>
+Description: Link against pthread
+ Linking against libindi requires pthread
+Last-Update: 2013-11-20
+
+Index: kstars/kstars/CMakeLists.txt
+===================================================================
+--- kstars.orig/kstars/CMakeLists.txt	2013-11-20 13:34:32.520871225 +0100
++++ kstars/kstars/CMakeLists.txt	2013-11-20 13:36:20.804450078 +0100
+@@ -479,6 +479,7 @@
+     kdeclarative
+ 	htmesh
+ 	${ZLIB_LIBRARIES}
++        pthread
+ 	${QT_QTSQL_LIBRARY}
+         )
+ # qt4_automoc(kstars.h)
