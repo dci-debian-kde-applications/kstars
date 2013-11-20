@@ -1,7 +1,7 @@
 kstars (4:4.11.3-2) UNRELEASED; urgency=low
 
   * Enable tests.
-  * Create a kstars-dbg package.
+  * Create a kstars-dbg package. (Closes: #694100)
   * Bump Standards-Version to 3.9.5, no changes required.
   * Update build dependencies.
   * New patch: link_pthread.diff, needed by libindi.
