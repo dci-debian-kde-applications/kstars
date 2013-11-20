@@ -10,6 +10,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.11),
  libeigen3-dev (>> 2.0.3), zlib1g-dev, libcfitsio3-dev (>= 3.040),
  libglu1-mesa-dev, libnova-dev, libqt4-opengl-dev, pkg-config,
  xplanet (>= 1.0),
+ libindi-dev (>= 0.9.6),
  wcslib-dev
 Standards-Version: 3.9.5
 Homepage: http://edu.kde.org/
