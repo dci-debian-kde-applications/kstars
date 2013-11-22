@@ -1,4 +1,4 @@
-kstars (4:4.11.3-2) UNRELEASED; urgency=low
+kstars (4:4.11.3-2) unstable; urgency=low
 
   * Enable tests.
   * Create a kstars-dbg package. (Closes: #694100)
@@ -6,7 +6,7 @@ kstars (4:4.11.3-2) UNRELEASED; urgency=low
   * Update build dependencies.
   * New patch: link_pthread.diff, needed by libindi.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 19 Nov 2013 21:02:49 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 22 Nov 2013 10:15:01 +0100
 
 kstars (4:4.11.3-1) unstable; urgency=low
 
