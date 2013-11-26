@@ -1,6 +1,6 @@
 kstars (4:4.11.3-3) UNRELEASED; urgency=low
 
-  * 
+  * Add a homedir for the tests.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 26 Nov 2013 12:35:27 +0100
 
