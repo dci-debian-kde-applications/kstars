@@ -1,3 +1,8 @@
+kstars (4:4.11.3-5) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Nov 2013 20:17:08 +0100
+
 kstars (4:4.11.3-4) unstable; urgency=low
 
   * Backport upstream commits 3231f23c31896b1da601e7a0704443d1181a0604
