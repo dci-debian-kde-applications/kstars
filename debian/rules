@@ -4,8 +4,3 @@ include /usr/share/pkg-kde-tools/qt-kde-team/2/debian-qt-kde.mk
 
 override_dh_strip:
 	dh_strip --dbg-package=kstars-dbg
-
-override_dh_auto_test:
-	[ -e $(CURDIR)/debian/tests.home ] || mkdir $(CURDIR)/debian/tests.home
-	HOME=$(CURDIR)/debian/tests.home $(overridden_command)
-	rm -rf $(CURDIR)/debian/home/tests.home
