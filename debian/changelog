@@ -1,3 +1,8 @@
+kstars (4:4.11.3-4) UNRELEASED; urgency=low
+
+
+ -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Nov 2013 16:44:00 +0100
+
 kstars (4:4.11.3-3) unstable; urgency=low
 
   * Add a homedir for the tests. (Closes: #730327)
