@@ -1,2 +1,4 @@
 eigen3.patch
 link_pthread.diff
+upstream_tests-split-init-tearup.patch
+upstream_tests-use-proper-temporary-files.patch

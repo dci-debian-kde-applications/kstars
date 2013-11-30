@@ -1,5 +1,11 @@
 kstars (4:4.11.3-4) UNRELEASED; urgency=low
 
+  [ Pino Toscano ]
+  * Backport upstream commits 3231f23c31896b1da601e7a0704443d1181a0604
+    (as upstream_tests-split-init-tearup.patch) and
+    bf2cb5653908863eee0ee6c6c05f87ba38886fa3 (as
+    upstream_tests-use-proper-temporary-files.patch) to make tests properly
+    use temporary files instead of relying on ~/.kde.
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Nov 2013 16:44:00 +0100
 

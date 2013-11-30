@@ -1,0 +1,169 @@
+From bf2cb5653908863eee0ee6c6c05f87ba38886fa3 Mon Sep 17 00:00:00 2001
+From: Pino Toscano <pino@kde.org>
+Date: Tue, 26 Nov 2013 00:02:51 +0100
+Subject: [PATCH] tests: use proper temporary files
+
+instead of hardcoding temporary file names within the local KDEHOME,
+use proper temporary files for the data files used in the tests
+
+this makes the tests runnable even when there is no real HOME set
+---
+ Tests/testcsvparser.cpp | 26 ++++++++++++--------------
+ Tests/testcsvparser.h   |  2 +-
+ Tests/testfwparser.cpp  | 28 ++++++++++++----------------
+ Tests/testfwparser.h    |  2 +-
+ 4 files changed, 26 insertions(+), 32 deletions(-)
+
+diff --git a/Tests/testcsvparser.cpp b/Tests/testcsvparser.cpp
+index cdb05f0..e4b8bbc 100644
+--- a/Tests/testcsvparser.cpp
++++ b/Tests/testcsvparser.cpp
+@@ -25,6 +25,8 @@
+ 
+ #include "testcsvparser.h"
+ 
++#include <ktemporaryfile.h>
++
+ TestCSVParser::TestCSVParser(): QObject() {
+ }
+ 
+@@ -82,18 +84,15 @@ void TestCSVParser::initTestCase() {
+                          "either\n"));
+   test_cases_.append(",,,,,,,,,,,\n");
+   test_cases_.append("\n");
+-  QString file_name("TestCSV.txt");
+-  file_name = KStandardDirs::locateLocal("appdata", file_name);
+-  if (!file_name.isNull()) {
+-        test_csv_file_.setFileName(file_name);
+-        if (!test_csv_file_.open(QIODevice::WriteOnly)) {
+-          kWarning() << QString("Couldn't open(%1)").arg(file_name);
+-        }
+-  }
+-  QTextStream out_stream(&test_csv_file_);
++  KTemporaryFile temp_file;
++  temp_file.setSuffix(".txt");
++  temp_file.setAutoRemove(false);
++  QVERIFY(temp_file.open());
++  test_file_name_ = temp_file.fileName();
++  QTextStream out_stream(&temp_file);
+   foreach(const QString &test_case, test_cases_)
+     out_stream << test_case;
+-  test_csv_file_.close();
++  temp_file.close();
+ 
+   //Building the sequence to be used. Includes all available types.
+   sequence_.clear();
+@@ -110,8 +109,7 @@ void TestCSVParser::initTestCase() {
+   sequence_.append(qMakePair(QString("field11"), KSParser::D_QSTRING));
+   sequence_.append(qMakePair(QString("field12"), KSParser::D_QSTRING));
+ 
+-  QString fname = KStandardDirs::locate( "appdata", file_name );
+-  test_parser_ = new KSParser(fname, '#', sequence_);
++  test_parser_ = new KSParser(test_file_name_, '#', sequence_);
+ }
+ 
+ TestCSVParser::~TestCSVParser()
+@@ -265,9 +263,9 @@ void TestCSVParser::CSVReadMissingFile() {
+   /*
+    * Test 6. Attempt to read a missing file repeatedly
+   */
+-  QFile::remove(KStandardDirs::locateLocal("appdata","TestCSV.txt"));
++  QFile::remove(test_file_name_);
+ 
+-  KSParser missing_parser(QString("TestCSV.txt"), '#', sequence_);
++  KSParser missing_parser(test_file_name_, '#', sequence_);
+   QHash<QString, QVariant> row_content = missing_parser.ReadNextRow();
+ 
+   for (int times = 0; times < 20; times++) {
+diff --git a/Tests/testcsvparser.h b/Tests/testcsvparser.h
+index 7cb33cf..1c01782 100644
+--- a/Tests/testcsvparser.h
++++ b/Tests/testcsvparser.h
+@@ -42,7 +42,7 @@ class TestCSVParser: public QObject {
+  private:
+   QStringList test_cases_;
+   QList< QPair<QString, KSParser::DataTypes> > sequence_;
+-  QFile test_csv_file_;
++  QString test_file_name_;
+   KSParser *test_parser_;
+ };
+ 
+diff --git a/Tests/testfwparser.cpp b/Tests/testfwparser.cpp
+index 0e39f70..37f5c48 100644
+--- a/Tests/testfwparser.cpp
++++ b/Tests/testfwparser.cpp
+@@ -17,6 +17,8 @@
+ 
+ #include "testfwparser.h"
+ 
++#include <ktemporaryfile.h>
++
+ TestFWParser::TestFWParser(): QObject() {
+ }
+ 
+@@ -27,20 +29,15 @@ void TestFWParser::initTestCase() {
+     "                                                               \n");
+   test_cases_.append("this is an ex\n\n");
+ 
+-  QString file_name("TestFW.txt");
+-  file_name = KStandardDirs::locateLocal("appdata", file_name);
+-
+-  if (!file_name.isNull()) {
+-        test_file_.setFileName(file_name);
+-        if (!test_file_.open(QIODevice::WriteOnly)) {
+-          kWarning() << QString("Couldn't open(%1)").arg(file_name);
+-        }
+-  }
+-
+-  QTextStream out_stream(&test_file_);
++  KTemporaryFile temp_file;
++  temp_file.setSuffix(".txt");
++  temp_file.setAutoRemove(false);
++  QVERIFY(temp_file.open());
++  test_file_name_ = temp_file.fileName();
++  QTextStream out_stream(&temp_file);
+   foreach(const QString &test_case, test_cases_)
+     out_stream << test_case;
+-  test_file_.close();
++  temp_file.close();
+ 
+   //Building the sequence to be used. Includes all available types.
+   sequence_.clear();
+@@ -68,8 +65,7 @@ void TestFWParser::initTestCase() {
+   widths_.append(6);
+   widths_.append(6);  //'repeatedly' doesn't need a width
+ 
+-  QString fname = KStandardDirs::locate( "appdata", file_name );
+-  test_parser_ = new KSParser(fname, '#', sequence_, widths_);
++  test_parser_ = new KSParser(test_file_name_, '#', sequence_, widths_);
+ }
+ 
+ TestFWParser::~TestFWParser()
+@@ -156,9 +152,9 @@ void TestFWParser::FWReadMissingFile()
+    * This tests how the parser reacts if there is no file with the
+    * given path.
+   */
+-  QFile::remove(KStandardDirs::locateLocal("appdata","TestFW.txt"));
++  QFile::remove(test_file_name_);
+ 
+-  KSParser missing_parser(QString("TestFW.txt"), '#', sequence_, widths_);
++  KSParser missing_parser(test_file_name_, '#', sequence_, widths_);
+   QHash<QString, QVariant> row_content = missing_parser.ReadNextRow();
+ 
+   for (int times = 0; times < 20; times++) {
+diff --git a/Tests/testfwparser.h b/Tests/testfwparser.h
+index 280794b..625076a 100644
+--- a/Tests/testfwparser.h
++++ b/Tests/testfwparser.h
+@@ -40,7 +40,7 @@ class TestFWParser: public QObject {
+   QStringList test_cases_;
+   QList<int> widths_;
+   QList< QPair<QString, KSParser::DataTypes> > sequence_;
+-  QFile test_file_;
++  QString test_file_name_;
+   KSParser *test_parser_;
+ };
+ 
+-- 
+1.8.4.2
+
