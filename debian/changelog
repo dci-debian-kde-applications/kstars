@@ -1,6 +1,5 @@
-kstars (4:4.11.3-4) UNRELEASED; urgency=low
+kstars (4:4.11.3-4) unstable; urgency=low
 
-  [ Pino Toscano ]
   * Backport upstream commits 3231f23c31896b1da601e7a0704443d1181a0604
     (as upstream_tests-split-init-tearup.patch) and
     bf2cb5653908863eee0ee6c6c05f87ba38886fa3 (as
@@ -8,7 +7,7 @@ kstars (4:4.11.3-4) UNRELEASED; urgency=low
     use temporary files instead of relying on ~/.kde.
   * Remove the custom home for tests, should not be needed anymore now.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Nov 2013 16:44:00 +0100
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Nov 2013 16:52:19 +0100
 
 kstars (4:4.11.3-3) unstable; urgency=low
 
