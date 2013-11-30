@@ -1,11 +1,10 @@
-kstars (4:4.11.3-5) UNRELEASED; urgency=low
+kstars (4:4.11.3-5) unstable; urgency=low
 
-  [ Pino Toscano ]
   * Backport upstream commit 64748ed5e45177224699c4f597d81d6cae3bfcdc to just
     use the system temporary directory, bypassing KDE's one. It should finally
     allow to run tests with no available $HOME.
 
- -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 30 Nov 2013 20:17:08 +0100
+ -- Pino Toscano <pino@debian.org>  Sat, 30 Nov 2013 20:20:34 +0100
 
 kstars (4:4.11.3-4) unstable; urgency=low
 
