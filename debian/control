@@ -13,6 +13,7 @@ Build-Depends: kde-sc-dev-latest (>= 4:4.11),
  libindi-dev (>= 0.9.6),
  wcslib-dev
 Standards-Version: 3.9.5
+XS-Testsuite: autopkgtest
 Homepage: http://edu.kde.org/
 Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-kde/kde-sc/kstars.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/kde-sc/kstars.git

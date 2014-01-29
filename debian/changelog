@@ -1,6 +1,7 @@
 kstars (4:4.11.5-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * Add autopkgtests.
 
  -- Maximiliano Curia <maxy@debian.org>  Wed, 29 Jan 2014 11:17:30 +0100
 
