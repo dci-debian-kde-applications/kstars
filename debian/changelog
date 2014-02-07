@@ -1,6 +1,12 @@
 kstars (4:4.12.2-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Remove: upstream_tests-always-the-system-temporary-dir.patch,
+    applied by upstream
+  * Remove: upstream_tests-use-proper-temporary-files.patch, applied by
+    upstream
+  * Remove: upstream_tests-split-init-tearup.patch, applied by upstream
+  * Refresh patches.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 19:26:12 +0100
 

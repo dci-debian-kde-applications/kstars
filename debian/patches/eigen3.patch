@@ -5,8 +5,8 @@ Last-Update: 2013-10-17
 
 Index: kstars/CMakeLists.txt
 ===================================================================
---- kstars.orig/CMakeLists.txt	2013-11-09 17:45:22.758523776 +0100
-+++ kstars/CMakeLists.txt	2013-11-09 17:45:22.754523934 +0100
+--- kstars.orig/CMakeLists.txt	2014-02-07 09:10:39.796083315 +0100
++++ kstars/CMakeLists.txt	2014-02-07 09:10:39.780082947 +0100
 @@ -15,8 +15,8 @@
  # some configure checks needed for kstars
  include(CheckIncludeFiles)
@@ -18,7 +18,7 @@ Index: kstars/CMakeLists.txt
  
  macro_optional_find_package(CFitsio)
  macro_bool_to_01(CFITSIO_FOUND HAVE_CFITSIO_H)
-@@ -46,13 +46,14 @@
+@@ -50,13 +50,14 @@
  enable_testing(true)
  
  
@@ -38,7 +38,7 @@ Index: kstars/CMakeLists.txt
 Index: kstars/cmake/modules/FindEigen3.cmake
 ===================================================================
 --- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ kstars/cmake/modules/FindEigen3.cmake	2013-11-09 17:45:22.754523934 +0100
++++ kstars/cmake/modules/FindEigen3.cmake	2014-02-07 09:10:39.788083131 +0100
 @@ -0,0 +1,81 @@
 +# - Try to find Eigen3 lib
 +#
@@ -123,8 +123,8 @@ Index: kstars/cmake/modules/FindEigen3.cmake
 +
 Index: kstars/kstars/ksutils.h
 ===================================================================
---- kstars.orig/kstars/ksutils.h	2013-11-09 17:45:22.758523776 +0100
-+++ kstars/kstars/ksutils.h	2013-11-09 17:45:22.754523934 +0100
+--- kstars.orig/kstars/ksutils.h	2014-02-07 09:10:39.796083315 +0100
++++ kstars/kstars/ksutils.h	2014-02-07 09:10:39.788083131 +0100
 @@ -29,7 +29,7 @@
  
  #include <cstddef>
@@ -136,8 +136,8 @@ Index: kstars/kstars/ksutils.h
  
 Index: kstars/kstars/projections/projector.h
 ===================================================================
---- kstars.orig/kstars/projections/projector.h	2013-11-09 17:45:22.758523776 +0100
-+++ kstars/kstars/projections/projector.h	2013-11-09 17:45:22.754523934 +0100
+--- kstars.orig/kstars/projections/projector.h	2014-02-07 09:10:39.796083315 +0100
++++ kstars/kstars/projections/projector.h	2014-02-07 09:10:39.788083131 +0100
 @@ -22,7 +22,7 @@
  
  #include <cstddef>
@@ -149,8 +149,8 @@ Index: kstars/kstars/projections/projector.h
  
 Index: kstars/kstars/skyglpainter.cpp
 ===================================================================
---- kstars.orig/kstars/skyglpainter.cpp	2013-11-09 17:45:22.758523776 +0100
-+++ kstars/kstars/skyglpainter.cpp	2013-11-09 17:45:22.754523934 +0100
+--- kstars.orig/kstars/skyglpainter.cpp	2014-02-07 09:10:39.796083315 +0100
++++ kstars/kstars/skyglpainter.cpp	2014-02-07 09:10:39.792083223 +0100
 @@ -25,7 +25,7 @@
  #include <cstddef>
  #include <Eigen/Core>
@@ -162,8 +162,8 @@ Index: kstars/kstars/skyglpainter.cpp
  #include <GL/gl.h>
 Index: kstars/kstars/skyglpainter.h
 ===================================================================
---- kstars.orig/kstars/skyglpainter.h	2013-11-09 17:45:22.758523776 +0100
-+++ kstars/kstars/skyglpainter.h	2013-11-09 17:45:22.754523934 +0100
+--- kstars.orig/kstars/skyglpainter.h	2014-02-07 09:10:39.796083315 +0100
++++ kstars/kstars/skyglpainter.h	2014-02-07 09:10:39.792083223 +0100
 @@ -22,7 +22,7 @@
  
  #include <cstddef>
