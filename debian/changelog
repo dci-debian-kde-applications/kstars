@@ -1,4 +1,4 @@
-kstars (4:4.12.2-1) UNRELEASED; urgency=medium
+kstars (4:4.12.2-1) experimental; urgency=medium
 
   * New upstream release.
   * Remove: upstream_tests-always-the-system-temporary-dir.patch,
@@ -9,7 +9,7 @@ kstars (4:4.12.2-1) UNRELEASED; urgency=medium
   * Refresh patches.
   * Bump kde-sc-dev-latest build dependency.
 
- -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 19:26:12 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 10 Feb 2014 11:32:13 +0100
 
 kstars (4:4.11.5-1) unstable; urgency=low
 
