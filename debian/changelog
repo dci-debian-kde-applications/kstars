@@ -7,6 +7,7 @@ kstars (4:4.12.2-1) UNRELEASED; urgency=medium
     upstream
   * Remove: upstream_tests-split-init-tearup.patch, applied by upstream
   * Refresh patches.
+  * Bump kde-sc-dev-latest build dependency.
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 04 Feb 2014 19:26:12 +0100
 
