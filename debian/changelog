@@ -1,6 +1,7 @@
 kstars (4:4.13.1-1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Remove applied by upstream patch: eigen.patch
 
  -- Maximiliano Curia <maxy@debian.org>  Tue, 20 May 2014 15:11:03 +0200
 

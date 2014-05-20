@@ -5,9 +5,9 @@ Last-Update: 2013-11-20
 
 Index: kstars/kstars/CMakeLists.txt
 ===================================================================
---- kstars.orig/kstars/CMakeLists.txt	2014-02-07 09:10:50.332325022 +0100
-+++ kstars/kstars/CMakeLists.txt	2014-02-07 09:10:50.328324928 +0100
-@@ -485,6 +485,7 @@
+--- kstars.orig/kstars/CMakeLists.txt	2014-05-20 15:19:37.815232125 +0200
++++ kstars/kstars/CMakeLists.txt	2014-05-20 15:19:37.811232282 +0200
+@@ -490,6 +490,7 @@
      ${QT_QTDECLARATIVE_LIBRARY}
      kdeclarative
  	${ZLIB_LIBRARIES}
