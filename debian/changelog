@@ -1,10 +1,10 @@
-kstars (4:4.14.0-1) UNRELEASED; urgency=medium
+kstars (4:4.14.0-1) unstable; urgency=medium
 
   * New upstream release.
   * Update build dependencies.
   * Update install files.
 
- -- Maximiliano Curia <maxy@debian.org>  Mon, 18 Aug 2014 18:29:38 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 20 Aug 2014 20:56:40 +0200
 
 kstars (4:4.13.3-1) unstable; urgency=medium
 
