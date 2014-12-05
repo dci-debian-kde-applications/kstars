@@ -1,3 +1,14 @@
+kstars (4:14.11.97-0ubuntu1~ubuntu15.04~ppa1) vivid; urgency=medium
+
+  * New upstream RC release
+  * Merge with Debian, remaining changes:
+   - not-installed
+   - don't build-dep on GL on armhf
+   - Recommend astrometry.net
+   - Recommend not suggest xplanet, indi-bin
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 01 Dec 2014 18:03:46 +0100
+
 kstars (4:4.14.2-1) unstable; urgency=medium
 
   * New upstream release (4.14.2).
@@ -23,6 +34,59 @@ kstars (4:4.13.3-1) unstable; urgency=medium
   * New upstream release.
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 25 Jul 2014 17:49:50 +0200
+
+kstars (4:4.14.2-0ubuntu1) vivid; urgency=medium
+
+  * New upstream release
+  * Add missing optional build dependencies. 
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 10 Oct 2014 06:12:55 -0700
+
+kstars (4:4.14.1-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Mon, 22 Sep 2014 17:37:28 +0200
+
+kstars (4:4.14.0-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Build with libindi 0.9.8
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 20 Aug 2014 13:25:24 +0200
+
+kstars (4:4.13.97-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release RC
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Fri, 01 Aug 2014 17:12:10 +0200
+
+kstars (4:4.13.95-0ubuntu1) utopic; urgency=medium
+
+  * New upstream beta release
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Wed, 30 Jul 2014 18:36:53 +0200
+
+kstars (4:4.13.90-0ubuntu1) utopic; urgency=medium
+
+  [ Scarlett Clark ]
+  * New upstream beta release
+
+  [ Jonathan Riddell ]
+  * Add appdata file
+
+ -- Scarlett Clark <scarlett@scarlettgatelyclark.com>  Thu, 24 Jul 2014 23:28:47 +0200
+
+kstars (4:4.13.2-0ubuntu1) utopic; urgency=medium
+
+  * New upstream release
+  * Merge with Debian, remaining change:
+   - don't build-dep on GL on armhf
+   - Recommend astrometry.net
+   - Recommend not suggest xplanet, indi-bin
+  * kubuntu_01_pthread_link.diff is now link_pthread.diff
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 17 Jun 2014 10:41:59 +0100
 
 kstars (4:4.13.1-1) unstable; urgency=medium
 
@@ -129,6 +193,147 @@ kstars (4:4.10.4-1) experimental; urgency=low
 
  -- Maximiliano Curia <maxy@debian.org>  Fri, 14 Jun 2013 14:30:34 +0200
 
+kstars (4:4.13.0-0ubuntu1) trusty; urgency=medium
+
+  * New upstream KDE Software Compilation release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 10 Apr 2014 22:16:21 +0100
+
+kstars (4:4.12.97-0ubuntu1) trusty; urgency=medium
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Wed, 02 Apr 2014 11:43:00 +0200
+
+kstars (4:4.12.95-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 23 Mar 2014 12:43:06 +0100
+
+kstars (4:4.12.90-0ubuntu1) trusty; urgency=medium
+
+  * New upstream beta release
+  * Add build-dep on qjson, libeigen3-dev, astrometry.net
+  * Add recommend on astrometry.net
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 19 Mar 2014 11:29:17 +0000
+
+kstars (4:4.12.3-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Tue, 04 Mar 2014 21:03:56 +0100
+
+kstars (4:4.12.2-0ubuntu2) trusty; urgency=medium
+
+  * Rebuild on new libindi
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 12 Feb 2014 13:56:18 +0000
+
+kstars (4:4.12.2-0ubuntu1) trusty; urgency=medium
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Feb 2014 00:15:23 +0000
+
+kstars (4:4.12.1-0ubuntu1) trusty; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Thu, 16 Jan 2014 08:29:57 +0000
+
+kstars (4:4.12.0-0ubuntu1) trusty; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 18 Dec 2013 17:26:53 +0000
+
+kstars (4:4.11.97-0ubuntu1) trusty; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 29 Nov 2013 13:26:13 +0000
+
+kstars (4:4.11.95-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Mon, 25 Nov 2013 18:23:19 +0100
+
+kstars (4:4.11.80-0ubuntu1) trusty; urgency=low
+
+  * New upstream beta release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Nov 2013 17:50:22 +0100
+
+kstars (4:4.11.2-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 30 Sep 2013 14:40:55 +0100
+
+kstars (4:4.11.1-0ubuntu1) saucy; urgency=low
+
+  * New upstream bugfix release.
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Fri, 06 Sep 2013 22:32:16 +0100
+
+kstars (4:4.11.0-0ubuntu1) saucy; urgency=low
+
+  [ Howard Chan ]
+  * New upstream release
+
+  [ Jonathan Riddell ]
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 14 Aug 2013 00:28:57 +0100
+
+kstars (4:4.10.97-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC 2 release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 26 Jul 2013 19:51:34 +0100
+
+kstars (4:4.10.95-0ubuntu1) saucy; urgency=low
+
+  * New upstream RC release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 19 Jul 2013 12:33:06 +0000
+
+kstars (4:4.10.90-0ubuntu1) saucy; urgency=low
+
+  * New upstream bet release
+
+ -- Michał Zając <quintasan@kubuntu.org>  Fri, 28 Jun 2013 18:23:33 +0100
+
+kstars (4:4.10.80-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+    - Refresh kubuntu_link_pthread.diff
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 21 Jun 2013 01:36:48 +0100
+
+kstars (4:4.10.4-0ubuntu1) saucy-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Fri, 07 Jun 2013 00:42:55 +0100
+
+kstars (4:4.10.3-0ubuntu2) saucy; urgency=low
+
+  * Add kubuntu_01_pthread_link.diff to link against pthread
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 08 May 2013 16:19:54 +0000
+
+kstars (4:4.10.3-0ubuntu1) saucy; urgency=low
+
+  * New upstream release
+  * Merge with Debian, remaining change:
+   - don't install GL on armhf
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 07 May 2013 16:55:07 +0000
+
 kstars (4:4.10.2-1) experimental; urgency=low
 
   * New upstream release.
@@ -143,17 +348,104 @@ kstars (4:4.10.2-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 11 Apr 2013 23:37:58 -0700
 
-kstars (4:4.8.4-2) unstable; urgency=low
+kstars (4:4.10.2-0ubuntu1) raring; urgency=low
 
-  * New patch: upstream_#undef-TIME_UTC-to-fix-conflict-with-glibc.diff.
-    (Closes: #701303)
-  * Add myself to uploaders.
-  * Add a basic manpage.
-  * Bump debhelper build-dep and compat to 9.
-  * Bump Standards-Version to 3.9.4.
-  * Update vcs fields.
+  * New upstream bugfix release
 
- -- Maximiliano Curia <maxy@debian.org>  Wed, 26 Jun 2013 08:27:14 +0200
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 31 Mar 2013 14:57:18 +0200
+
+kstars (4:4.10.1-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream bugfix release
+  * Add kubuntu_link_pthread.diff to link to pthread, fixes compile on
+    i386
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 05 Mar 2013 16:39:17 +0000
+
+kstars (4:4.10.0-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 06 Feb 2013 12:04:08 +0000
+
+kstars (4:4.9.98-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 18 Jan 2013 15:54:17 +0000
+
+kstars (4:4.9.97-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Thu, 03 Jan 2013 22:43:19 +0100
+
+kstars (4:4.9.95-0ubuntu1) raring; urgency=low
+
+  * New upstream RC release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 18 Dec 2012 23:40:17 +0000
+
+kstars (4:4.9.90-0ubuntu1) raring-proposed; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 07 Dec 2012 18:08:32 +0000
+
+kstars (4:4.9.80-0ubuntu1) raring; urgency=low
+
+  [ Jonathan Riddell ]
+  * New upstream beta release
+
+  [ Harald Sitter ]
+  * Build dep on wcslib-dev (new dep)
+  * Build dep on libindi-dev >= 0.9.6
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 19 Nov 2012 16:07:49 +0000
+
+kstars (4:4.9.3-0ubuntu1) raring; urgency=low
+
+  * New upstream release (LP: #1074747)
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Tue, 06 Nov 2012 22:41:23 +0100
+
+kstars (4:4.9.2-0ubuntu1) quantal-proposed; urgency=low
+
+  * New upstream bugfix release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 02 Oct 2012 15:32:42 +0100
+
+kstars (4:4.9.1-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Harald Sitter <apachelogger@ubuntu.com>  Mon, 10 Sep 2012 18:37:35 +0530
+
+kstars (4:4.9.0-0ubuntu1) quantal; urgency=low
+
+  * Use direct build-depends versions rather than kde-sc-dev-latest
+  * New upstream release
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 26 Jul 2012 22:40:41 +0100
+
+kstars (4:4.8.90-0ubuntu2) quantal; urgency=low
+
+  * Rebuild for the libindi0 -> libindi0b transition.
+
+ -- Adam Conrad <adconrad@ubuntu.com>  Wed, 20 Jun 2012 14:13:44 -0600
+
+kstars (4:4.8.90-0ubuntu1) quantal; urgency=low
+
+  * New upstream beta release.
+
+ -- Felix Geyer <debfx@ubuntu.com>  Mon, 11 Jun 2012 23:38:29 +0200
+
+kstars (4:4.8.80-0ubuntu1) quantal; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 06 Jun 2012 16:00:50 +0100
 
 kstars (4:4.8.4-1) unstable; urgency=low
 
@@ -165,6 +457,55 @@ kstars (4:4.8.4-1) unstable; urgency=low
   * Convert copyright to copyright-format v1.0 and update.
 
  -- Pino Toscano <pino@debian.org>  Sat, 16 Jun 2012 14:28:07 +0200
+
+kstars (4:4.8.2-0ubuntu1) precise; urgency=low
+
+  * new upstream release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 03 Apr 2012 08:51:44 +0000
+
+kstars (4:4.8.1-0ubuntu1) precise; urgency=low
+
+  * New upstream release 
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sun, 04 Mar 2012 20:56:01 +0100
+
+kstars (4:4.8.0-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Mon, 23 Jan 2012 21:47:50 +0100
+
+kstars (4:4.7.97-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 05 Jan 2012 12:18:32 +0000
+
+kstars (4:4.7.95-0ubuntu1) precise; urgency=low
+
+  * New upstream release candidate
+
+ -- Philip Muškovac <yofel@kubuntu.org>  Sat, 24 Dec 2011 21:02:40 +0100
+
+kstars (4:4.7.90-0ubuntu3) precise; urgency=low
+
+  * Really fix the armhf build and unbreak the now broken armel build.
+
+ -- Matthias Klose <doko@ubuntu.com>  Wed, 21 Dec 2011 23:11:32 +0100
+
+kstars (4:4.7.90-0ubuntu2) precise; urgency=low
+
+  * Missing change from 4:4.7.3-0ubuntu3
+   - Disable OpenGL on armhf as well.
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 21 Dec 2011 16:58:43 +0000
+
+kstars (4:4.7.90-0ubuntu1) precise; urgency=low
+
+  * New upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Fri, 16 Dec 2011 13:14:42 +0000
 
 kstars (4:4.7.4-2) unstable; urgency=low
 
@@ -182,6 +523,29 @@ kstars (4:4.7.4-1) experimental; urgency=low
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sun, 18 Dec 2011 01:35:39 +0100
 
+kstars (4:4.7.3-0ubuntu3) precise; urgency=low
+
+  * Disable OpenGL on armhf as well.
+
+ -- Matthias Klose <doko@ubuntu.com>  Mon, 05 Dec 2011 12:28:54 +0100
+
+kstars (4:4.7.3-0ubuntu2) precise; urgency=low
+
+  * Re-apply changes that have been dropped in the last upload:
+    - Disable OpenGL on armel.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Sun, 27 Nov 2011 14:05:27 +0100
+
+kstars (4:4.7.3-0ubuntu1) precise; urgency=low
+
+  * New upstream release
+  * Merge with Debian Git
+   - Build-dep on libnova-dev
+   - kstars suggests on indi not indi-bin
+   - Recommends on xplanet not Suggests
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Wed, 23 Nov 2011 23:47:05 +0000
+
 kstars (4:4.7.2-1) experimental; urgency=low
 
   [ Pino Toscano ]
@@ -195,3 +559,53 @@ kstars (4:4.7.2-1) experimental; urgency=low
     - change the suggest from indi to indi-bin
 
  -- Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 03 Dec 2011 10:44:36 -0300
+
+kstars (4:4.7.2-0r0) raring; urgency=low
+
+  * Initial release:
+    - provides various corrections for Canadian entries in Cities.dat
+      (Closes: #622310)
+    - correctly takes the DST into account (Closes: #622312)
+  * Provide the INDI support, only on Linux architecture (as upstream checks):
+    (Closes: #599332)
+    - build depend on libindi-dev
+    - change the suggest from indi to indi-bin
+
+ -- Pino Toscano <pino@debian.org>  Mon, 24 Oct 2011 16:35:38 +0200
+
+kstars (4:4.7.2-0ubuntu1) oneiric-proposed; urgency=low
+
+  * New upstream release (LP: #872506)
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Wed, 05 Oct 2011 00:10:52 +0530
+
+kstars (4:4.7.1-0ubuntu2) oneiric; urgency=low
+
+  * No-change rebuild so translations aren't stripped from .desktop
+    files anymore.
+
+ -- Felix Geyer <debfx-pkg@fobos.de>  Fri, 16 Sep 2011 01:02:48 +0200
+
+kstars (4:4.7.1-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+
+ -- Jonathan Kolberg <bulldog98@kubuntu-de.org>  Sun, 04 Sep 2011 14:32:45 +0200
+
+kstars (4:4.7.0-0ubuntu1) oneiric; urgency=low
+
+  * New upstream release
+    - Add kubuntu_fix_FindINDI.cmake to find libindi-dev
+    - Bump kde-sc-dev-latest to 4:4.7.0
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sat, 23 Jul 2011 23:07:27 +0200
+
+kstars (4:4.6.90+repack-0ubuntu1) raring; urgency=low
+
+  * New upstream release candidate
+  * Split packaging from kdeedu
+    - kstars-dbg breaks/replaces kdeedu-dbg << 4:4.6.80
+  * Repackage upstream source to include missing license copies
+
+ -- Rohan Garg <rohangarg@kubuntu.org>  Sun, 03 Jul 2011 14:13:19 +0200
+
