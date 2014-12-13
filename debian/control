@@ -32,7 +32,7 @@ Package: kstars
 Architecture: any
 Section: science
 Depends: kstars-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
-Suggests: khelpcenter, konqueror, xplanet
+Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
 Description: desktop planetarium for KDE
  KStars is a desktop planetarium for KDE, depicting an accurate graphical
