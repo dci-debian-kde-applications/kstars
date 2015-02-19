@@ -1,4 +1,4 @@
 Tests: testsuite
-Depends: @, @builddeps@, build-essential,
+Depends: @, build-essential, cmake,
          xvfb, xauth, dbus-x11
 Restrictions: build-needed
