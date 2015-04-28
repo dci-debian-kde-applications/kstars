@@ -1,6 +1,7 @@
 kstars (4:15.04.0-0ubuntu1) UNRELEASED; urgency=medium
 
   * New upstream release.
+  * Add new depend astrometry.net 
 
  -- Scarlett Clark <sgclark@kubuntu.org>  Tue, 28 Apr 2015 14:23:53 -0700
 
