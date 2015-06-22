@@ -1,3 +1,9 @@
+kstars (4:15.04.2-0ubuntu2) wily; urgency=medium
+
+  * Update testsuite.xsession for kf5
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Mon, 22 Jun 2015 13:40:41 +0200
+
 kstars (4:15.04.2-0ubuntu1) wily; urgency=medium
 
   * New upstream release.
