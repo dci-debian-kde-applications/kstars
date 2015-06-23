@@ -1,3 +1,9 @@
+kstars (4:15.04.2-0ubuntu3) wily; urgency=medium
+
+  * Add more test depends
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Tue, 23 Jun 2015 17:18:28 +0200
+
 kstars (4:15.04.2-0ubuntu2) wily; urgency=medium
 
   * Update testsuite.xsession for kf5
