@@ -1,3 +1,9 @@
+kstars (4:15.07.90-0ubuntu1) UNRELEASED; urgency=medium
+
+  * new upstream beta release
+
+ -- Jonathan Riddell <jriddell@ubuntu.com>  Thu, 13 Aug 2015 11:32:19 +0100
+
 kstars (4:15.04.2-0ubuntu3) wily; urgency=medium
 
   * Add more test depends
