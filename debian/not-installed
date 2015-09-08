@@ -1,2 +1,3 @@
 # We don't support static linking
-./usr/lib/libhtmesh.a
+./usr/lib/x86_64-linux-gnu/libhtmesh.a
+./usr/lib/i386-linux-gnu/libhtmesh.a

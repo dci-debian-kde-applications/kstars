@@ -1,4 +1,5 @@
 Tests: testsuite
-Depends: @, build-essential, cmake,
-         xvfb, xauth, dbus-x11
+Depends: @, @builddeps@, build-essential,
+         xvfb, xauth, dbus-x11, openbox,
+         libkf5service-bin, kded5, kinit
 Restrictions: build-needed
