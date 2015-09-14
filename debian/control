@@ -45,7 +45,7 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/kstars.git
 Package: kstars
 Architecture: any
 Section: science
-Depends: kstars-data (>= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Depends: kstars-data (= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
 Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
 Description: desktop planetarium for KDE
