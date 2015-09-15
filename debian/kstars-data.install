@@ -3,5 +3,7 @@ usr/share/appdata/org.kde.kstars.appdata.xml
 usr/share/config.kcfg/*
 usr/share/doc/*
 usr/share/icons/*
+usr/share/knotifications5/*
 usr/share/kstars/*
 usr/share/kxmlgui5/*
+usr/share/sounds/*
