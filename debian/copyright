@@ -3,33 +3,162 @@ Upstream-Name: kstars
 Source: http://projects.kde.org/projects/kde/kdeedu/kstars
 
 Files: *
-Copyright: 2001, Heiko Evermann <heiko@evermann.de>
-           2001-2009, Jason Harris <kstars@30doradus.org>
-           2001-2006, Jasem Mutlaq <mutlaqja@ikarustech.com>
-           2001-2005, Pablo de Vicente <p.devicente@wanadoo.es>
-           2001-2003, 2005, 2008, Thomas Kabelmann <tk78@gmx.de>
-           2002, Mark Hollomon <mhh@mindspring.com>
-           2004, Jeff Woods <jcwoods@bellsouth.net>
-           2007, 2009, James B. Bowlin <bowlin@mindspring.com>
-           2008-2011, Akarsh Simha <akarshsimha@gmail.com>
-           2008-2009, 2011, Jérôme SONRIER <jsid@emor3j.fr.eu.org>
-           2009, Khudyakov Alexey <alexey.skladnoy@gmail.com>
-           2009, Médéric Boquien <mboquien@free.fr>
-           2009, Steve Coe <stevecoe@cloudynights.com>
-           2009, Prakash Mohan <prakash.mohan@kdemail.net>
-           2009, Vipul Kumar Singh <vipulkrsingh@gmail.com>
+Copyright: 2008-2014, Akarsh Simha
+           2008, Akarsh Simha, Thomas Kabelmann
+           2012, Andrew Stepanenko
+           1989-1991, Free Software Foundation, Inc
+           2001, Heiko Evermann
            2010, Henry de Valence <hdevalence@gmail.com>
-           2011, Samikshan Bairagya <samikshan@gmail.com>
-           2011, Rafał Kułaga <rl.kulaga@gmail.com>
-           Elwood C. Downey
+           2007, James B. Bowlin
+           2001-2012, Jasem Mutlaq
+           2003-2015, Jasem Mutlaq <mutlaqja@ikarustech.com>
+           2001-2008, Jason Harris
+           2002-2005, Jason Harris and Jasem Mutlaq
+           2004-2014, Jeff Woods, Jason Harris
+           2008-2012, Jerome SONRIER
+           2011, Jérôme SONRIER
+           2009, Khudyakov Alexey
+           2002, Mark Hollomon
+           2001-2005, Pablo de Vicente
+           2008-2009, Prakash Mohan
+           2011, Rafał Kułaga
+           2012, Rishab Arora
+           2011-2013, Samikshan Bairagya
+           2013, Samikshan Bairagya <samikshan@gmail.com>
+           2001-2005, Thomas Kabelmann
+           2014-2015, Utkarsh Simha
+           2010, Valery Kharitonov
+           2013, Vijay Dhameliya
+           2009, Vipul Kumar Singh, Médéric Boquien
+           Brad Wallis and Robert Provin
+           Dean Jacobson
+           2007, James B. Bowlin
+           2008-2011, Akarsh Simha <akarsh.simha@kdemail.net>
+           Jan Wisniewski
+           2001-2003, Jason Harris and the KStars Team
+           2002, Jason Harris and the KStars team
+           Jason Ware
+           Martin Germano
+           2000, Peter Z. Kunszt
+           2000, Peter Z. Kunszt, Alex S. Szalay, Aniruddha R. Thakar
+           Scott J. Wolk and Nancy R. Adams
+           2001-2009, The KStars Team <kstars@30doradus.org>
+           2001-2015, The KStars Team
+           Till Credner and Sven Kohle
+           2008, Akarsh Simha <akarshsimha@gmail.com>
+           2004, Jason Harris and Clemens (?)
 License: GPL-2+
 
 Files: cmake/modules/*
-Copyright: 2006, 2011, Jasem Mutlaq <mutlaqja@ikarustech.com>
-           2006, 2007, Montel Laurent, <montel@kde.org>
-           2008, 2009, Gael Guennebaud, <g.gael@free.fr>
-           2008, Jerome SONRIER, <jsid@emor3j.fr.eu.org>
+Copyright: 2006-2013, Jasem Mutlaq <mutlaqja@ikarustech.com>
+           2008, Jerome SONRIER <jsid@emor3j.fr.eu.org>
+           2012, Pino Toscano <pino@kde.org
 License: BSD-3-clause
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions
+ are met:
+ .
+ 1. Redistributions of source code must retain the copyright
+    notice, this list of conditions and the following disclaimer.
+ 2. Redistributions in binary form must reproduce the copyright
+    notice, this list of conditions and the following disclaimer in the
+    documentation and/or other materials provided with the distribution.
+ 3. The name of the author may not be used to endorse or promote products
+    derived from this software without specific prior written permission.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE AUTHOR ``AS IS'' AND ANY EXPRESS OR
+ IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED.
+ IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT
+ NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+Files: cmake/modules/FindEigen3.cmake
+Copyright: 2009, Benoit Jacob <jacob.benoit.1@gmail.com>
+           2008-2009, Gael Guennebaud <g.gael@free.fr>
+           2006-2007, Montel Laurent <montel@kde.org>
+License: BSD-2-clause
+ Redistribution and use is allowed according to the terms of the 2-clause BSD
+ license.
+ .
+ Redistribution and use in source and binary forms, with or without
+ modification, are permitted provided that the following conditions are met:
+ .
+ 1. Redistributions of source code must retain the above copyright notice,
+ this list of conditions and the following disclaimer.
+ .
+ 2. Redistributions in binary form must reproduce the above copyright notice,
+ this list of conditions and the following disclaimer in the documentation
+ and/or other materials provided with the distribution.
+ .
+ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"
+ AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+ CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+ POSSIBILITY OF SUCH DAMAGE.
+
+Files: kstars/data/tools/HTMesh-0.01/README
+       kstars/data/tools/HTMesh-0.01/lib/HTMesh.pm
+       kstars/data/tools/HTMesh-0.01/ppport.h
+Copyright: 2006, A. U. Thor
+           2015, James Bowlin <bowlin@mindspring.com>, Akarsh Simha <akarsh@kde.org>
+           1999, Kenneth Albanowski
+           2004-2005, Marcus Holland-Moritz
+           2001, Paul Marquess
+License: Artistic-1_or_GPL-1+
+ This library is free software; you can redistribute it and/or modify
+ it under the same terms as Perl itself, either Perl version 5.8.8 or,
+ at your option, any later version of Perl 5 you may have available.
+
+Files: kstars/ekos/QProgressIndicator.cpp
+       kstars/ekos/QProgressIndicator.h
+Copyright: 2009-2010, Morgan Leborgne
+License: LGPL-3+
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Lesser General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public License
+ along with QRecentFilesMenu. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+Files: kstars/fitsviewer/bayer.c
+       kstars/fitsviewer/bayer.h
+License: LGPL-2.1+
+ This library is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+ .
+ This library is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU Lesser General Public
+ License along with this library; if not, write to the Free Software
+ Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+ .
+ On Debian systems, the complete text of the GNU Lesser General Public License
+ version 2.1 can be found in `/usr/share/common-licenses/LGPL-2.1'.
 
 Files: README.customize
        README.i18n
