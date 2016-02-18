@@ -1,7 +1,11 @@
 kstars (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
 
+  [ Clive Johnston ]
   * Merged with Debian
   * New upstream release 
+
+  [ Scarlett Clark ]
+  * Add missing optional dependency astrometry 
 
  -- Clive Johnston <clivejo@aol.com>  Tue, 09 Feb 2016 16:41:51 +0000
 
