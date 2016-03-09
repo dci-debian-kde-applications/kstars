@@ -1,4 +1,4 @@
-kstars (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
+kstars (4:15.12.1-1ubuntu1) xenial; urgency=medium
 
   [ Clive Johnston ]
   * Merged with Debian
@@ -7,7 +7,7 @@ kstars (4:15.12.1-1ubuntu1) UNRELEASED; urgency=medium
   [ Scarlett Clark ]
   * Add missing optional dependency astrometry 
 
- -- Clive Johnston <clivejo@aol.com>  Tue, 09 Feb 2016 16:41:51 +0000
+ -- Clive Johnston <clivejo@aol.com>  Wed, 09 Mar 2016 11:11:40 +0100
 
 kstars (4:15.12.1-1) experimental; urgency=medium
 
