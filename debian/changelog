@@ -1,3 +1,11 @@
+kstars (4:15.12.3-1~1.gbp684e5a) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @684e5a09afd64d51730a5724025482125006f709 **
+
+  * Bump Standards-Version to 3.9.8
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Wed, 13 Apr 2016 11:50:43 +0200
+
 kstars (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
