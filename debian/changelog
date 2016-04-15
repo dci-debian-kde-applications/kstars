@@ -1,3 +1,10 @@
+kstars (4:15.12.3-0ubuntu2) xenial; urgency=medium
+
+  * Add upstream patch to fix isnan against new libc6. 
+  * Release to archive.
+
+ -- Scarlett Clark <sgclark@kubuntu.org>  Fri, 15 Apr 2016 08:02:41 -0700
+
 kstars (4:15.12.3-0ubuntu1) xenial; urgency=medium
 
   * New upstream bugfix release
