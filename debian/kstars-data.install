@@ -1,5 +1,4 @@
 etc/xdg/*
-usr/share/appdata/org.kde.kstars.appdata.xml
 usr/share/config.kcfg/*
 usr/share/doc/*
 usr/share/icons/*

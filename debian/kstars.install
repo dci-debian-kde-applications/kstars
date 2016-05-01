@@ -1,2 +1,3 @@
 usr/bin/kstars
+usr/share/appdata/org.kde.kstars.appdata.xml
 usr/share/applications/org.kde.kstars.desktop

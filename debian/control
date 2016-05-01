@@ -2,7 +2,8 @@ Source: kstars
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Pino Toscano <pino@debian.org>, Maximiliano Curia <maxy@debian.org>
+Uploaders: Pino Toscano <pino@debian.org>,
+           Maximiliano Curia <maxy@debian.org>
 Build-Depends: astrometry.net,
                cmake (>= 2.8.12~),
                debhelper (>= 9),
@@ -47,9 +48,14 @@ Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/kstars.git
 Package: kstars
 Architecture: any
 Section: science
-Depends: kstars-data (= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
-Suggests: khelpcenter, konqueror
-Recommends: astrometry.net, indi-bin, xplanet
+Depends: kstars-data (= ${source:Version}),
+         ${misc:Depends},
+         ${shlibs:Depends}
+Suggests: khelpcenter,
+          konqueror
+Recommends: astrometry.net,
+            indi-bin,
+            xplanet
 Description: desktop planetarium for KDE
  KStars is a desktop planetarium for KDE, depicting an accurate graphical
  simulation of the night sky, from any location on Earth, at any date and time.
