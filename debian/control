@@ -15,8 +15,9 @@ Build-Depends: astrometry.net,
                libcfitsio3-dev (>= 3.040),
                libeigen3-dev (>> 2.0.3),
                libglu1-mesa-dev [!armhf],
-               libindi-dev (>= 1.1.0~),
+               libindi-dev (>= 1.2.0~),
                libkf5config-dev,
+               libkf5crash-dev,
                libkf5dbusaddons-dev,
                libkf5guiaddons-dev,
                libkf5i18n-dev,
@@ -40,7 +41,7 @@ Build-Depends: astrometry.net,
                wcslib-dev,
                xplanet (>= 1.0),
                zlib1g-dev
-Standards-Version: 3.9.6
+Standards-Version: 3.9.8
 Homepage: http://edu.kde.org/
 Vcs-Browser: http://anonscm.debian.org/cgit/pkg-kde/applications/kstars.git
 Vcs-Git: git://anonscm.debian.org/pkg-kde/applications/kstars.git

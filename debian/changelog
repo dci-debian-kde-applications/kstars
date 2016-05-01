@@ -1,3 +1,12 @@
+kstars (4:16.04.0-1~1.gbp4d78ad) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @4d78ad2686bd5bdb500940fd5d23ce24dc15000b **
+
+  * Bump Standards-Version to 3.9.8
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 21 Apr 2016 02:46:58 +0200
+
 kstars (4:15.12.1-1) experimental; urgency=medium
 
   * New upstream release (15.12.0).
