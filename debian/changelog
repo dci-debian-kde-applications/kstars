@@ -1,6 +1,6 @@
-kstars (4:16.04.0-1~3.gbp1bef8e) UNRELEASED; urgency=medium
+kstars (4:16.04.1-1~1.gbp81c548) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @1bef8e058c1e529d1511eb08c95a1e30cb15b52e **
+  ** SNAPSHOT build @81c5489db335c98685a867660309c1c26bfeeaf9 **
 
   [ Automatic packaging ]
   * Bump Standards-Version to 3.9.8
@@ -15,8 +15,9 @@ kstars (4:16.04.0-1~3.gbp1bef8e) UNRELEASED; urgency=medium
   * Add upstream metadata (DEP-12)
   * debian/control: Update Vcs-Browser and Vcs-Git fields
   * Add missing breaks/replaces
+  * UNRELEASED
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Fri, 06 May 2016 13:54:26 +0200
+ -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Tue, 10 May 2016 20:46:49 +0200
 
 kstars (4:15.12.1-1) experimental; urgency=medium
 
