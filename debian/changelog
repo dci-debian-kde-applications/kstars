@@ -15,7 +15,7 @@ kstars (4:16.04.1-1~1.gbp81c548) UNRELEASED; urgency=medium
   * Add upstream metadata (DEP-12)
   * debian/control: Update Vcs-Browser and Vcs-Git fields
   * Add missing breaks/replaces
-  * UNRELEASED
+  * Reenable libindi support. (Closes: #824866)
 
  -- Maximiliano Curia <jenkins@amadeus.gnuservers.com.ar>  Tue, 10 May 2016 20:46:49 +0200
 
