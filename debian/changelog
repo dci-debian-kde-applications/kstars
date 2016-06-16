@@ -4,9 +4,7 @@ kstars (4:16.04.2-0neon) xenial; urgency=medium
 
  -- Neon CI <neon@kde.org>  Thu, 16 Jun 2016 11:08:26 +0000
 
-kstars (4:16.04.0-1~2.gbp27ca70) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @27ca70f90204e42ef606d119a1265e3239406072 **
+kstars (4:16.04.1-1) unstable; urgency=medium
 
   [ Automatic packaging ]
   * Bump Standards-Version to 3.9.8
@@ -15,7 +13,15 @@ kstars (4:16.04.0-1~2.gbp27ca70) UNRELEASED; urgency=medium
   [ Matthias Klumpp ]
   * Fix the AppStream metadata by placing .desktop file and metainfo file in the same package
 
- -- Matthias Klumpp <matthias@tenstral.net>  Sun, 01 May 2016 19:46:17 +0200
+  [ Maximiliano Curia ]
+  * New upstream release (15.12.2).
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
+  * Add missing breaks/replaces
+  * Reenable libindi support. (Closes: #824866)
+
+ -- Maximiliano Curia <maxy@debian.org>  Thu, 26 May 2016 18:31:27 +0200
 
 kstars (4:15.12.1-1) experimental; urgency=medium
 
