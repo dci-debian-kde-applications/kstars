@@ -1,3 +1,11 @@
+kstars (4:16.04.3-1~1.gbp0a6e27) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @0a6e27727593e718899ca3805b6d347f89b5aa0b **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Tue, 12 Jul 2016 20:47:11 +0200
+
 kstars (4:16.04.1-1) unstable; urgency=medium
 
   [ Automatic packaging ]
