@@ -1,11 +1,13 @@
-kstars (4:16.08.0-1~1.gbp6a2a46) UNRELEASED; urgency=medium
+kstars (4:16.08.0-1~2.gbp962a14) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @6a2a467258bb2c2b360d18b4e373852a396c966a **
+  ** SNAPSHOT build @962a14583446074886f706eab8634491907f76c6 **
 
   * UNRELEASED
   * UNRELEASED
+  * Move auto tests to autopkgtests
+  * Update install files
 
- -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 18 Aug 2016 20:46:55 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 29 Aug 2016 12:03:42 +0200
 
 kstars (4:16.04.1-1) unstable; urgency=medium
 
