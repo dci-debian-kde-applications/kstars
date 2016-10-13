@@ -2,8 +2,7 @@ Source: kstars
 Section: kde
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
-Uploaders: Pino Toscano <pino@debian.org>,
-           Maximiliano Curia <maxy@debian.org>
+Uploaders: Pino Toscano <pino@debian.org>, Maximiliano Curia <maxy@debian.org>
 Build-Depends: astrometry.net,
                cmake (>= 2.8.12~),
                debhelper (>= 9),
@@ -19,10 +18,12 @@ Build-Depends: astrometry.net,
                libkf5config-dev,
                libkf5crash-dev,
                libkf5dbusaddons-dev,
+               libkf5doctools-dev,
                libkf5guiaddons-dev,
                libkf5i18n-dev,
                libkf5iconthemes-dev,
                libkf5jobwidgets-dev,
+               libkf5kio-dev,
                libkf5newstuff-dev,
                libkf5notifications-dev,
                libkf5plotting-dev,
@@ -49,14 +50,9 @@ Vcs-Git: https://anonscm.debian.org/git/pkg-kde/applications/kstars.git
 Package: kstars
 Architecture: any
 Section: science
-Depends: kstars-data (= ${source:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Suggests: khelpcenter,
-          konqueror
-Recommends: astrometry.net,
-            indi-bin,
-            xplanet
+Depends: kstars-data (= ${source:Version}), ${misc:Depends}, ${shlibs:Depends}
+Suggests: khelpcenter, konqueror
+Recommends: astrometry.net, indi-bin, xplanet
 Breaks: kstars-data (<= 4:16.04)
 Replaces: kstars-data (<= 4:16.04)
 Description: desktop planetarium for KDE
