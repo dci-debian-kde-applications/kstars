@@ -1,5 +1,8 @@
-kstars (4:16.08.0-1~2.gbp962a14) UNRELEASED; urgency=medium
+kstars (4:16.08.2-1~1.gbp7c4e29) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @7c4e293d00c302d31becac74bfc38ac725227388 **
+
+  [ Maximiliano Curia ]
   ** SNAPSHOT build @962a14583446074886f706eab8634491907f76c6 **
 
   * UNRELEASED
@@ -7,7 +10,10 @@ kstars (4:16.08.0-1~2.gbp962a14) UNRELEASED; urgency=medium
   * Move auto tests to autopkgtests
   * Update install files
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 29 Aug 2016 12:03:42 +0200
+  [ Automatic packaging ]
+  * Update build-deps and deps with the info from cmake
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 20:47:20 +0200
 
 kstars (4:16.04.1-1) unstable; urgency=medium
 
