@@ -1,19 +1,14 @@
-kstars (4:16.08.2-1~1.gbp7c4e29) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @7c4e293d00c302d31becac74bfc38ac725227388 **
+kstars (4:16.08.2-1) unstable; urgency=medium
 
   [ Maximiliano Curia ]
-  ** SNAPSHOT build @962a14583446074886f706eab8634491907f76c6 **
-
-  * UNRELEASED
-  * UNRELEASED
+  * New upstream release (16.08.2)
   * Move auto tests to autopkgtests
   * Update install files
 
   [ Automatic packaging ]
   * Update build-deps and deps with the info from cmake
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 20:47:20 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 18 Oct 2016 09:35:47 +0200
 
 kstars (4:16.04.1-1) unstable; urgency=medium
 
