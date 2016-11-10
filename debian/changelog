@@ -1,3 +1,11 @@
+kstars (4:16.08.3-1~1.gbpa3018f) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @a3018f2185e76e832e09be407f5f73f9cd82a3aa **
+
+  * UNRELEASED
+
+ -- Maximiliano Curia <jenkins@gnuservers.com.ar>  Thu, 10 Nov 2016 20:47:12 +0100
+
 kstars (4:16.08.2-2) unstable; urgency=medium
 
   * Build-depend on libcfitsio-dev instead of libcfitsio3-dev.
