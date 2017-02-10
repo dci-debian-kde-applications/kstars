@@ -1,3 +1,10 @@
+kstars (4:16.08.3-2~) UNRELEASED; urgency=medium
+
+  * Add libqt5sql5-sqlite runtime dependency.
+    Thanks to Jan Echternach for reporting (Closes: 854516)
+
+ -- Maximiliano Curia <maxy@debian.org>  Fri, 10 Feb 2017 17:20:57 +0100
+
 kstars (4:16.08.3-1) unstable; urgency=medium
 
   * New upstream release (16.08.3)
