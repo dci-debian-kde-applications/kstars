@@ -2,5 +2,8 @@
 
 include /usr/share/pkg-kde-tools/qt-kde-team/3/debian-qt-kde.mk
 
+override_dh_auto_configure:
+	$(overridden_command) -- -DINDI_INCLUDE_DIR=/usr/include/libindi/
+
 override_dh_strip:
 	dh_strip --dbgsym-migration='kstars-dbg (<= 4:15.12.1-1~~)'
