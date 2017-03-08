@@ -1,16 +1,15 @@
 https://git.reviewboard.kde.org/r/129998/
 
-Index: kstars/cmake/modules/FindINDI.cmake
-===================================================================
---- kstars.orig/cmake/modules/FindINDI.cmake
-+++ kstars/cmake/modules/FindINDI.cmake
+diff --git a/cmake/modules/FindINDI.cmake b/cmake/modules/FindINDI.cmake
+index 2eab50a..e14163b 100644
+--- a/cmake/modules/FindINDI.cmake
++++ b/cmake/modules/FindINDI.cmake
 @@ -17,150 +17,150 @@
  # Redistribution AND use is allowed according to the terms of the BSD license.
  
  macro(_INDI_check_version)
 -  file(READ "${INDI_INCLUDE_DIR}/indiapi.h" _INDI_version_header)
-+    file(READ "${INDI_INCLUDE_DIR}/indiapi.h" _INDI_version_header)
- 
+-
 -  string(REGEX MATCH "#define INDI_VERSION_MAJOR[ \t]+([0-9]+)" _INDI_version_major_match "${_INDI_version_header}")
 -  set(INDI_VERSION_MAJOR "${CMAKE_MATCH_1}")
 -  string(REGEX MATCH "#define INDI_VERSION_MINOR[ \t]+([0-9]+)" _INDI_version_minor_match "${_INDI_version_header}")
@@ -31,6 +30,8 @@ Index: kstars/cmake/modules/FindINDI.cmake
 -  else(NOT INDI_VERSION_OK)
 -      mark_as_advanced(INDI_VERSION_MAJOR INDI_VERSION_MINOR INDI_VERSION_RELEASE)
 -  endif(NOT INDI_VERSION_OK)
++    file(READ "${INDI_INCLUDE_DIR}/indiapi.h" _INDI_version_header)
++
 +    string(REGEX MATCH "#define INDI_VERSION_MAJOR[ \t]+([0-9]+)" _INDI_version_major_match "${_INDI_version_header}")
 +    set(INDI_VERSION_MAJOR "${CMAKE_MATCH_1}")
 +    string(REGEX MATCH "#define INDI_VERSION_MINOR[ \t]+([0-9]+)" _INDI_version_minor_match "${_INDI_version_header}")
@@ -117,14 +118,16 @@ Index: kstars/cmake/modules/FindINDI.cmake
 +        ${GNUWIN32_DIR}/include
      )
 -    endif(INDI_VERSION VERSION_LESS "1.4")
--
+ 
 -    find_library(INDI_CLIENT_LIBRARIES NAMES indiclient
 -        PATHS
 -        ${PC_INDI_LIBRARY_DIRS}
 -        ${_obLinkDir}
 -        ${GNUWIN32_DIR}/lib
 -    )
--
++    if (INDI_INCLUDE_DIR)
++        _INDI_check_version()
+ 
 -    find_library(INDI_CLIENT_QT_LIBRARIES NAMES indiclientqt
 -        PATHS
 -            ${PC_INDI_LIBRARY_DIRS}
@@ -133,7 +136,7 @@ Index: kstars/cmake/modules/FindINDI.cmake
 -    )
 -endif(ANDROID)
 -endif(INDI_INCLUDE_DIR)
- 
+-
 -if(ANDROID)
 -  if(INDI_INCLUDE_DIR AND INDI_CLIENT_ANDROID_LIBRARIES)
 -    set(INDI_FOUND TRUE)
@@ -156,9 +159,7 @@ Index: kstars/cmake/modules/FindINDI.cmake
 -        set(INDI_FOUND FALSE)
 -    endif(INDI_INCLUDE_DIR AND (INDI_VERSION VERSION_GREATER "1.4" OR INDI_LIBRARIES) AND (INDI_CLIENT_LIBRARIES OR INDI_CLIENT_QT_LIBRARIES) AND INDI_VERSION_OK)
 -endif(ANDROID)
-+    if (INDI_INCLUDE_DIR)
-+        _INDI_check_version()
- 
+-
 -  if (INDI_FOUND)
 -    if (NOT INDI_FIND_QUIETLY)
          if(ANDROID)
@@ -169,7 +170,7 @@ Index: kstars/cmake/modules/FindINDI.cmake
 +                        )
          else(ANDROID)
 -          message(STATUS "Found INDI: ${INDI_LIBRARIES}, ${INDI_INCLUDE_DIR}")
- 
+-
 -          if (INDI_CLIENT_LIBRARIES)
 -            message(STATUS "Found INDI Client Library: ${INDI_CLIENT_LIBRARIES}")
 -          endif (INDI_CLIENT_LIBRARIES)
@@ -183,6 +184,7 @@ Index: kstars/cmake/modules/FindINDI.cmake
 -      message(FATAL_ERROR "INDI not found. Please install INDI and try again.")
 -    endif (INDI_FIND_REQUIRED)
 -  endif (INDI_FOUND)
++
 +            if (INDI_VERSION VERSION_LESS "1.4")
 +                find_library(INDI_LIBRARIES NAMES indi
 +                             PATHS
