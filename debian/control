@@ -71,7 +71,10 @@ Description: desktop planetarium for KDE
 Package: kstars-data
 Architecture: all
 Section: science
-Depends: ${misc:Depends}
+Depends: qml-module-qtquick-controls,
+         qml-module-qtquick-layout,
+         qml-module-qtquick2,
+         ${misc:Depends}
 Description: data files for KStars desktop planetarium
  This package contains architecture-independent data files for KStars,
  the graphical desktop planetarium for KDE, including star catalogues and
