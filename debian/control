@@ -72,7 +72,7 @@ Package: kstars-data
 Architecture: all
 Section: science
 Depends: qml-module-qtquick-controls,
-         qml-module-qtquick-layout,
+         qml-module-qtquick-layouts,
          qml-module-qtquick2,
          ${misc:Depends}
 Description: data files for KStars desktop planetarium
