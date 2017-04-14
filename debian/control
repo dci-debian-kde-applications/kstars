@@ -57,8 +57,8 @@ Depends: kstars-data (= ${source:Version}),
          ${shlibs:Depends}
 Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
-Breaks: kstars-data (<= 4:16.04)
-Replaces: kstars-data (<= 4:16.04)
+Breaks: kstars-data (<= 4:16.04), ${kde-l10n:all}
+Replaces: kstars-data (<= 4:16.04), ${kde-l10n:all}
 Description: desktop planetarium for KDE
  KStars is a desktop planetarium for KDE, depicting an accurate graphical
  simulation of the night sky, from any location on Earth, at any date and time.
