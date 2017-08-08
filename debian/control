@@ -40,6 +40,7 @@ Build-Depends: astrometry.net,
                qtbase5-dev (>= 5.4),
                qtdeclarative5-dev (>= 5.4),
                qtmultimedia5-dev (>= 5.4),
+               qtpositioning5-dev,
                wcslib-dev,
                xplanet (>= 1.0),
                zlib1g-dev
