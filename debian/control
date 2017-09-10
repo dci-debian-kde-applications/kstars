@@ -42,7 +42,7 @@ Build-Depends: astrometry.net,
                qtmultimedia5-dev (>= 5.4),
                wcslib-dev,
                xplanet (>= 1.0),
-               zlib1g-dev
+               zlib1g-dev,
 Standards-Version: 4.1.0
 Homepage: http://edu.kde.org/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/applications/kstars.git
@@ -54,7 +54,7 @@ Section: science
 Depends: kstars-data (= ${source:Version}),
          libqt5sql5-sqlite,
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
 Breaks: kstars-data (<= 4:16.04), ${kde-l10n:all}
@@ -74,7 +74,7 @@ Section: science
 Depends: qml-module-qtquick-controls,
          qml-module-qtquick-layouts,
          qml-module-qtquick2,
-         ${misc:Depends}
+         ${misc:Depends},
 Description: data files for KStars desktop planetarium
  This package contains architecture-independent data files for KStars,
  the graphical desktop planetarium for KDE, including star catalogues and
