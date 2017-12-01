@@ -42,7 +42,7 @@ Build-Depends: astrometry.net,
                qtmultimedia5-dev (>= 5.4),
                wcslib-dev,
                xplanet (>= 1.0),
-               zlib1g-dev,
+               zlib1g-dev
 Standards-Version: 4.1.0
 Homepage: http://edu.kde.org/
 Vcs-Browser: https://anonscm.debian.org/git/pkg-kde/applications/kstars.git
@@ -86,7 +86,7 @@ Section: science
 Depends: qml-module-qtquick-controls,
          qml-module-qtquick-layouts,
          qml-module-qtquick2,
-         ${misc:Depends},
+         ${misc:Depends}
 Breaks: ${kde-l10n:all}
 Replaces: ${kde-l10n:all}
 Description: data files for KStars desktop planetarium
