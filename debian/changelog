@@ -10,6 +10,7 @@ kstars (4:17.08.3-0r1) UNRELEASED; urgency=medium
   * Remove alternative libcfitsio3-dev build dependency for libcfitsio-dev.
   * Move translations to kstars-data
     - set the proper breaks/replaces
+  * Update lintian overrides.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Nov 2017 21:18:42 -0300
 
