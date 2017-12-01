@@ -1,5 +1,8 @@
 kstars (4:17.08.1-2) UNRELEASED; urgency=medium
 
+  [ Lisandro Damián Nicanor Pérez Meyer ]
+  * Update package description using Steffen Möller's suggestions as a base.
+
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Nov 2017 21:18:42 -0300
 
 kstars (4:17.08.1-1) experimental; urgency=medium

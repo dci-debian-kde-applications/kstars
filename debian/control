@@ -54,19 +54,31 @@ Section: science
 Depends: kstars-data (= ${source:Version}),
          libqt5sql5-sqlite,
          ${misc:Depends},
-         ${shlibs:Depends},
+         ${shlibs:Depends}
 Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
 Breaks: kstars-data (<= 4:16.04), ${kde-l10n:all}
 Replaces: kstars-data (<= 4:16.04), ${kde-l10n:all}
-Description: desktop planetarium for KDE
- KStars is a desktop planetarium for KDE, depicting an accurate graphical
- simulation of the night sky, from any location on Earth, at any date and time.
- The display includes 130,000 stars, 13,000 deep-sky objects, all 8 planets,
- the Sun and Moon, and thousands of comets and asteroids.  It includes tools
- for astronomical calculations and can control telescopes and cameras.
- .
- This package is part of the KDE education module.
+Description: desktop planetarium, observation planning and telescope control
+  KStars is a scientifically accurate desktop planetarium, visualising a
+  graphical simulation of the night sky from any location on Earth, at any date
+  and time.
+  The display includes 130,000 stars, 13,000 deep-sky objects, all 8 planets,
+  the Sun and Moon, and thousands of comets and asteroids. KStars adresses
+  students and amateur astronomers of all levels.
+  .
+  The database of known objects can be extended and updated from local or
+  remote databases, which is prepared for in a user-extendable interface.
+  KStars suggests observations of particular interest like conjunctions
+  with respect to the location of the user. And for user-selected targets it
+  proposes the ones that are best-observable.
+  .
+  The software may be used for planning experiments around the globe,
+  e.g. for remote controlled commercial services. But KStars also
+  features an INDI interface to control local telescopes and cameras.
+  Users with programming experience can script it via the KDE desktop bus.
+  .
+  This package is part of the KDE education module.
 
 Package: kstars-data
 Architecture: all
