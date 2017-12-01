@@ -11,6 +11,8 @@ kstars (4:17.08.3-0r1) UNRELEASED; urgency=medium
   * Move translations to kstars-data
     - set the proper breaks/replaces
   * Update lintian overrides.
+  * Bump the libindi-dev build dependency to >= 1.4.1, as indicated by the
+    upstream build system.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Nov 2017 21:18:42 -0300
 
