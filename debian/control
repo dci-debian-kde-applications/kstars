@@ -57,8 +57,8 @@ Depends: kstars-data (= ${source:Version}),
          ${shlibs:Depends}
 Suggests: khelpcenter, konqueror
 Recommends: astrometry.net, indi-bin, xplanet
-Breaks: kstars-data (<= 4:16.04), ${kde-l10n:all}
-Replaces: kstars-data (<= 4:16.04), ${kde-l10n:all}
+Breaks: kstars-data (<= 4:16.04)
+Replaces: kstars-data (<= 4:16.04)
 Description: desktop planetarium, observation planning and telescope control
   KStars is a scientifically accurate desktop planetarium, visualising a
   graphical simulation of the night sky from any location on Earth, at any date
@@ -87,8 +87,8 @@ Depends: qml-module-qtquick-controls,
          qml-module-qtquick-layouts,
          qml-module-qtquick2,
          ${misc:Depends}
-Breaks: ${kde-l10n:all}
-Replaces: ${kde-l10n:all}
+Breaks: kstars (<= 4:17.08.3~), ${kde-l10n:all}
+Replaces: kstars (<= 4:17.08.3~), ${kde-l10n:all}
 Description: data files for KStars desktop planetarium
  This package contains architecture-independent data files for KStars,
  the graphical desktop planetarium for KDE, including star catalogues and
