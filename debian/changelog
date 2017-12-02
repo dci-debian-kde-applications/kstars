@@ -1,4 +1,7 @@
-kstars (4:17.08.3-0r1) UNRELEASED; urgency=medium
+kstars (4:17.08.3-1) unstable; urgency=medium
+
+  * Team upload.
+  * Upload to unstable.
 
   [ Lisandro Damián Nicanor Pérez Meyer ]
   * Update package description using Steffen Möller's suggestions as a base.
@@ -17,7 +20,7 @@ kstars (4:17.08.3-0r1) UNRELEASED; urgency=medium
   * Adjust l10npkgs_firstversion_ok to the version where kde-l10n will drop
     translations.
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 30 Nov 2017 21:18:42 -0300
+ -- Pino Toscano <pino@debian.org>  Sat, 02 Dec 2017 08:08:07 +0100
 
 kstars (4:17.08.1-1) experimental; urgency=medium
 
