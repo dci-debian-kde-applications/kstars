@@ -1,4 +1,8 @@
+etc/dbus-1/system.d/org.kde.kf5auth.kstars.conf
 usr/bin/kstars
+usr/lib/*/libexec/kauth/kauth_kstars_helper
 usr/share/*/org.kde.kstars.appdata.xml
 usr/share/applications/org.kde.kstars.desktop
+usr/share/dbus-1/system-services/org.kde.kf5auth.kstars.service
 usr/share/locale/
+usr/share/polkit-1/actions/org.kde.kf5auth.kstars.policy
